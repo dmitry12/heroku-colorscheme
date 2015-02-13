@@ -245,7 +245,7 @@ if &t_Co == 88 || &t_Co == 256
   call <SID>X("StatusLine", s:window, s:yellow, "reverse")
   call <SID>X("StatusLineNC", s:window, s:foreground, "reverse")
   call <SID>X("VertSplit", s:window, s:window, "none")
-  call <SID>X("Visual", "", s:selection, "")
+  call <SID>X("Visual", "", s:comment, "")
   call <SID>X("Directory", s:blue, "", "")
   call <SID>X("ModeMsg", s:green, "", "")
   call <SID>X("MoreMsg", s:green, "", "")
@@ -257,7 +257,7 @@ if &t_Co == 88 || &t_Co == 256
   if version >= 700
     call <SID>X("CursorLine", "", s:line, "none")
     call <SID>X("CursorColumn", "", s:line, "none")
-    call <SID>X("PMenu", s:foreground, s:selection, "none")
+    call <SID>X("PMenu", s:foreground, s:background, "none")
     call <SID>X("PMenuSel", s:foreground, s:selection, "reverse")
   end
   if version >= 703
